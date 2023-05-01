@@ -20,7 +20,7 @@
         transform: translateX(100%);
         transition: 0.5s;
 
-        button {
+        button.close {
             background-color: transparent;
             border: none;
             font-size: 17px;
@@ -67,7 +67,7 @@
                 outline: none;
             }
 
-            input[type="submit"] {
+            button.submit {
                 background-color: white;
                 border: none;
                 font-size: 20px;

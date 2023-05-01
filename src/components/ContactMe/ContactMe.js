@@ -12,13 +12,13 @@ const ContactMe = ({isVisible,hideContactForm}) => {
         >
             <div className='contactme-container'>
                 <div className='contactme'>
-                <button onClick={hideContactForm}>cancel</button>
+                <button className='close' onClick={hideContactForm}>cancel</button>
                     <form>
                         <p className='title'>Send message to me, and I answer You as fast as I can.</p>
                         <input type='text' placeholder='Your e-mail'/>
                         <textarea placeholder='Message'/>
                         <div>
-                            <input type='submit' value='confirm'/>
+                            <button className='submit'>confirm</button>
                         </div>
                     </form>
                 </div>
