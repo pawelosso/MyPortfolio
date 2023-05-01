@@ -32,9 +32,9 @@ const Header = () => {
                         <img src={reduxIcon} alt='redux'/>
                         <img src={gitIcon} alt='git'/>
                     </div>
-                    <div className='elements margin'>
+                    <a className='elements margin' href='https://github.com/pawelosso'>
                         <img src={githubIcon} alt='github'/>
-                    </div>
+                    </a>
                 </div>
             </div>
       </header>

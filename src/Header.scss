@@ -66,13 +66,19 @@ header {
                     max-width: 50px;
                 }
 
+                .link{
+                    text-decoration: none;
+                }
+
                 &.margin {
-                    margin-top: 10vh;
+                    margin-top: 5vh;
                     column-gap: 10px;
                     justify-content: start;
                     align-items: center;
                     display: flex;
                     justify-content: center;
+                    text-decoration: none;
+                    color: black;
                     
                     img{
                         width: 20vw;
@@ -80,7 +86,7 @@ header {
                     }
                 
                     &::after{
-                        content: 'look at my projects!';
+                        content: 'look at my Github!';
                     }
                 }
             }
