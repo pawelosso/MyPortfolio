@@ -1,0 +1,107 @@
+header {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    align-items: start;
+    flex-direction: row-reverse;
+    column-gap: 40px;
+
+    .portrait-container {
+        width: 75vw;
+        height: 75vw;
+        overflow: hidden;
+        display: flex;
+        border-radius: 50%;
+        align-items: center;
+        justify-content: center;
+        position: relative;
+        max-height: 350px;
+        max-width: 350px;
+
+        img {
+            height: 100%;
+            object-fit: cover;
+            position: absolute;
+        }
+    
+    }
+
+    .info {
+        display: flex;
+        flex-direction: column;
+        row-gap: 3vh;
+
+        .text{
+            h1 {
+                font-size: 11vmin;
+            }
+            
+            p {
+                font-size: 5vmin;
+                background: #8D57FF;
+                background: linear-gradient(to right, #8D57FF 0%, #CF43F2 100%);
+                -webkit-background-clip: text;
+                -webkit-text-fill-color: transparent;
+            }
+        }
+        
+        .stack{
+            font-size: 20px;
+            max-width: 430px;
+
+            p {
+                border-bottom: 3px solid;
+                padding-bottom: 5px;
+                margin-bottom: 10px;
+                color: rgba(38, 38, 38, 0.9215686275);
+            }
+
+            .elements {
+                display: flex;
+                justify-content: space-between;
+
+                img{
+                    width: 12vw;
+                    max-width: 50px;
+                }
+
+                &.margin {
+                    margin-top: 40px;
+                    column-gap: 10px;
+                    justify-content: start;
+                    align-items: center;
+                    display: flex;
+                    
+                    img{
+                        width: 20vw;
+                        max-width: 50px;
+                    }
+                
+                    &::after{
+                        content: 'look at my projects!';
+                    }
+                }
+            }
+        }
+    }
+
+}
+
+
+@media (min-width: 1350px) {
+header{
+    .portrait-container{
+        max-width: 400px;
+        max-height: 400px;
+    }
+}
+}
+
+@media (min-width: 1400px) {
+header{
+    .portrait-container{
+        max-width: 450px;
+        max-height: 450px;
+    }
+}
+}

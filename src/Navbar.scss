@@ -1,0 +1,37 @@
+nav {
+    position: fixed;
+    top: 0;
+    width: 100%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    height: 66px;
+    background-color: rgba(38, 38, 38, 0.9215686275);
+    color: white;
+    z-index: 3;
+
+    ul {
+        display: flex;
+        column-gap: 10vw;
+        align-items: center;
+        justify-content: center;
+        list-style-type: none;
+        
+        li {
+            list-style: none;
+            cursor: pointer;
+            transition: .2s;
+
+            &:hover{
+                color: #c993f9;
+            }
+        
+        }
+    }
+}
+
+@media (min-width:800px){
+    nav {
+        font-size: 20px;
+    }
+}
