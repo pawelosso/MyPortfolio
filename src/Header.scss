@@ -67,11 +67,12 @@ header {
                 }
 
                 &.margin {
-                    margin-top: 40px;
+                    margin-top: 10vh;
                     column-gap: 10px;
                     justify-content: start;
                     align-items: center;
                     display: flex;
+                    justify-content: center;
                     
                     img{
                         width: 20vw;
@@ -86,6 +87,20 @@ header {
         }
     }
 
+}
+
+@media (min-width:500px) {
+    header {
+        .info{
+            .stack{
+                .elements{
+                    &.margin{
+                        justify-content: start;
+                    }
+                }
+            }
+        }
+    }
 }
 
 

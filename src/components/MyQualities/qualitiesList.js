@@ -13,22 +13,22 @@ export let elements = [
     },
     {
         type:'certificates',
-        name:'E.12',
+        name:'Comuters montage and repairing',
     },
     {
         type:'certificates',
-        name:'E.13',
+        name:'Administration of network',
     },
     {
         type:'certificates',
-        name:'E.14',
+        name:'Building a web-apps and databases',
     },
     {
         type:'education',
-        name:'WSB',
+        name:'University WSB Merito Gdańsk',
     },
     {
         type:'education',
-        name:'IT Technician',
+        name:'IT Technician - middle school',
     },
 ]
