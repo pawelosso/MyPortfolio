@@ -3,6 +3,7 @@ This is my simple one-page, which shows you a little of my skills.
 ### Go life: https://pawelosso.github.io/MyPortfolio/
 <br>
 I made this webside with <strong>React.js</strong>
+
 <strong>Other technologies used in this project</strong>
 <br><br>
 [![My Skills](https://skillicons.dev/icons?i=html)](https://skillicons.dev)
