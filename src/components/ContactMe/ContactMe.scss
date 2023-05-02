@@ -19,6 +19,15 @@
         position: relative;
         transform: translateX(100%);
         transition: 0.5s;
+        flex-direction: column;
+
+        .title {
+            font-size: 25px;
+            color: grey;
+            text-align: center;
+            margin-bottom: 32px;
+            padding: 0px 20px;
+        }
 
         button.close {
             background-color: transparent;
@@ -36,10 +45,6 @@
             row-gap: 20px;
             width: 95%;
             max-width: 500px;
-
-            .title {
-                font-size: 25px;
-            }
         
             input[type="text"] {
                 width: 50%;
@@ -107,11 +112,10 @@
 @media (min-width: 500px) {
     .contactme-container{
         .contactme{
-            form{
-                .title{
-                    font-size: 35px;
-                }
-                
+            .title {
+                font-size: 35px;
+            }
+            form{  
                 textarea{
                     height: 300px;
                 }            

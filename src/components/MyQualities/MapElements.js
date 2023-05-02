@@ -20,7 +20,12 @@ const MapElements = ({type}) => {
             <p className='qualitiesTitle'>
                 {format === 'All'? `${format} qualities`: format}
             </p>
-            {qualities.map(el => <div key={el.name} className='qualitiesElement'>{el.name}</div>)}
+            {qualities.map(el => 
+                <div key={el.name} className='qualitiesElement'>
+                    <span>{el.type}</span>
+                    <p>{el.name}</p>
+                </div>
+            )}
         </div>   
     )
 }

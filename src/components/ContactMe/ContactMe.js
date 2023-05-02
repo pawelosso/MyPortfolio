@@ -13,8 +13,8 @@ const ContactMe = ({isVisible,hideContactForm}) => {
             <div className='contactme-container'>
                 <div className='contactme'>
                 <button className='close' onClick={hideContactForm}>cancel</button>
+                <p className='title'>Send message to me, and I answer You as fast as I can.</p>
                     <form>
-                        <p className='title'>Send message to me, and I answer You as fast as I can.</p>
                         <input type='text' placeholder='Your e-mail'/>
                         <textarea placeholder='Message'/>
                         <div>
