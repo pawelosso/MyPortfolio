@@ -3,7 +3,6 @@ This is my simple one-page, which shows you a little of my skills. Life: https:/
 <br>
 I made this webside with <strong>React.js</strong> &nbsp;&nbsp;&nbsp;[![My Skills](https://skillicons.dev/icons?i=react)](https://skillicons.dev)
 
-
 All technologies used in this project:
 <br><br>
 [![My Skills](https://skillicons.dev/icons?i=html)](https://skillicons.dev)
