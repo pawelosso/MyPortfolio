@@ -1,6 +1,8 @@
 ## My reprezentative side 
 This is my simple one-page, which shows you a little of my skills.
+<br>
 Life: https://pawelosso.github.io/MyPortfolio/
+<br>
 I made this webside with <strong>React.js</strong> &nbsp;&nbsp;&nbsp;[![My Skills](https://skillicons.dev/icons?i=react)](https://skillicons.dev)
 
 
