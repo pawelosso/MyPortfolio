@@ -6,12 +6,50 @@ nav {
     align-items: center;
     justify-content: center;
     height: 66px;
-    background-color: rgba(38, 38, 38, 0.9215686275);
-    color: white;
+    color: black;
     z-index: 3;
+    background-color: rgb(190 92 247 / 56%);
 
-    ul {
+    div {
+        height: 40px;
+        width: 40px;
+        position: absolute;
+        right: 20px;
+        background-color: transparent;
         display: flex;
+        align-items: center;
+        justify-content: center;
+        
+        span{
+            width: 100%;
+            height: 6px;
+            position: absolute;
+            background-color: transparent;
+            
+            &::before{
+                content: '';
+                position: absolute;
+                width: 100%;
+                height: 100%;
+                transform: translateY(-7px);
+                background-color: black;
+                transition:.2s;
+            }
+
+            &::after{
+                content: '';
+                position: absolute;
+                width: 70%;
+                height: 100%;
+                transform: translateY(7px);
+                background-color: black;
+                transition:.2s;
+            }
+        }
+    }
+
+    .computer-menu {
+        display: none;
         column-gap: 10vw;
         align-items: center;
         justify-content: center;
@@ -26,6 +64,88 @@ nav {
                 color: #c993f9;
             }
         
+        }
+    }
+
+    &.active{
+        z-index: 5;
+        background-color: transparent;
+
+        div{
+            span{
+                &::before{
+                    transform: rotate(-45deg);
+                    background-color: white;
+                }
+    
+                &::after{
+                    width: 100%;
+                    height: 100%;
+                    transform: rotate(45deg);
+                    background-color: white;
+                }
+            }
+        }
+    }
+}
+
+.phone-menu {
+    width: 100%;
+    height: 100%;
+    position: fixed;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    background-color: rgb(62 62 62 / 97%);
+    z-index: 4;
+    flex-direction: column;
+    row-gap: 40px;
+    bottom: 0;
+
+    li{
+        font-size: 30px;
+        list-style-type: none;
+        color: white;
+    }
+
+    &.active-enter {
+        transform: translateY(-100%);
+    }
+    &.active-enter-active {
+        transition: .5s;
+        transform: none;
+    }
+    &.active-exit {
+        opacity: 1;
+    }
+    &.active-exit-active {
+        transition: .5s;
+        opacity: 0;
+    }
+}
+
+@media (min-width:700px){
+    nav {
+        justify-content: end;
+        padding-right: 5%;
+        background-color: transparent;
+        color: black;
+
+        .computer-menu {
+            column-gap: 5vw;
+            border-bottom: 4px solid;
+            padding-left: 40px;
+            padding-right: 40px;
+            padding-bottom: 4px;
+            display: flex;
+        }
+        
+        div{
+            display: none;
+        }
+
+        .phone-menu{
+            display: none;
         }
     }
 }
