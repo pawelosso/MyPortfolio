@@ -17,6 +17,9 @@ const MyProjects = ({hideMyProjects, isVisible}) => {
             classNames={'active'}
         >
             <div className='myprojects'>
+                <div className='close' onClick={hideMyProjects}>
+                    <span></span>
+                </div>
                 <p className='title'>My Projects</p>
                 <div className='projects-container'>
                     <Project title='Wedding planer' img={WeddingPlanner}/>
